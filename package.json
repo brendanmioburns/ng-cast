@@ -11,9 +11,10 @@
     "start": "npm install -g live-server; line-server"
   },
   "dependencies": {
+    "angular": "^1.6",
+    "angular-sanitize": "^1.6.4",
     "bootstrap": "^4.0.0-alpha.2",
-    "lodash": "^4.6.1",
-    "angular": "^1.6"
+    "lodash": "^4.6.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.2",

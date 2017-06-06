@@ -32,6 +32,7 @@ describe('video list', function() {
   });
 
   it('should not use & function binding', function() {
+    debugger;
     var fakeOnClick = function () {};
     createVideoListElement({ onClick: fakeOnClick }, function(element) {
       expect(element.isolateScope().$ctrl.onClick).to.equal(fakeOnClick);

@@ -1,4 +1,4 @@
-angular.module('video-player', [])
+angular.module('video-player')
 
 .controller('AppCtrl', function($scope) {
 
@@ -10,10 +10,13 @@ angular.module('video-player', [])
   // bindings: {
   //   videos: '<'
   // },
+  
 
-  // controller: function() {
-  //   this.videos
-  // },
+  controller: function($scope) {
+    // this.selectVideo = function()
+    this.current = exampleVideoData[0];
+    this.videos = exampleVideoData;
+  },
   
   templateUrl: 'src/templates/app.html',
 
