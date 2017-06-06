@@ -4,8 +4,6 @@ angular.module('video-player')
   bindings: {
     video: '<',
   },
-  controller: function($scope) {
-  },
 
   templateUrl: 'src/templates/videoListEntry.html'
 });
