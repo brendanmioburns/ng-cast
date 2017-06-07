@@ -1,18 +1,15 @@
 angular.module('video-player')
 
+.controller('SearchController', function(youTube) {
+
+  this.search = (item) => {
+    youTube.search(item, this.updateResults);
+  };
+})
 .component('search', {
   bindings: {
-    result: '<'
+    updateResults: '<'
   },
-  controller: function($scope, $interval) {
-
-//    this.search = (item) => {
-      // console.log(item);
-    //   $interval(function() {
-
-    //   this.result(item);
-    //   }, 500);
-    // };
-  },
+  controller: 'SearchController',
   templateUrl: 'src/templates/search.html'
 });
